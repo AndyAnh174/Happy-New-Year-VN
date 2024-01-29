@@ -1,0 +1,63 @@
+:root {
+    --bg1: #9b59b6;
+    --bg2: #3498db;
+    --text: #26ade4;
+    --border-color: #ff6347; /* Màu đỏ cho viền */
+    --border-width: 4px; /* Độ dày của viền */
+    --border-radius: 10px; /* Bán kính của góc bo tròn */
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    margin-right: 20px;
+    height: 150px;
+    width: 150px;
+    border: var(--border-width) solid var(--border-color); /* Sử dụng biến cho độ dày và màu của viền */
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius); /* Sử dụng biến cho bán kính của góc bo tròn */
+    justify-content: center;
+    color: #ff0000;
+    opacity: 0; /* Ẩn ban đầu */
+    animation: fadeIn 5s ease-in-out forwards; /* Sử dụng animation cho hiệu ứng fadeIn */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+.item span {
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 12px;
+    font-family: 'Baloo Bhai', 'Arial';
+    border-style: solid;
+    border-width: 1.5px;
+}
