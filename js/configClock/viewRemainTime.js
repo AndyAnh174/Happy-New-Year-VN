@@ -3,12 +3,13 @@
 /*----------------------danh sách số từ 0-9 cho từng view phần tử thời gian sao cho đúng nhất------*/
 /**************************************************************************************************/
 var viewRemainTime = function(){
-    this.objRemainTime = new remainTime(2021, 2, 12, 00, 00, 00, 000); // Lấy ra mảng chứa các thành phần time còn lại
+    this.objRemainTime = new remainTime(2024, 1, 10, 00, 00, 00, 000); // Lấy ra mảng chứa các thành phần time còn lại
     this.remainTime = []; // Chứa mảng các thành phần thời gian trong thời gian còn lại
     this.listNumberOfViewElementTime = []; // Mảng các danh sách số từ 0-9 trong các view hiển thị phần tử thời gian
-    this.viewElementTime = document.getElementsByClassName("element-time"); // Mảng chứa các view phần từ thời gian
+    this.viewElementTime = document.getElementsByClassName("element-time"); // Mảng chứa các view phần tử thời gian
     this.elementTime = []; // Mảng lưu từng phần tử thời gian
     this.x = null; // Biến trung gian
+    this.happyNewYearDisplayed = false; // Biến kiểm tra xem đã hiển thị "Happy New Year" chưa
     
     // Khởi tạo danh sách số từ 0-9 rồi add vào các view phần tử
     this.addListNumberForElementTime = function() {
@@ -49,41 +50,45 @@ var viewRemainTime = function(){
                 // để chuẩn bị cho quá trình cập nhật mới tiếp theo
                 this.elementTime = [];
             } else {
-                document.querySelector(".clock .viewTime .time-remain:first-child").style.marginRight = "3px";
-                var haiCham = document.querySelectorAll(".clock .viewTime .hai-cham > p");
-                for(this.x =0; this.x <  haiCham.length; this.x++) {
-                    haiCham[this.x].innerHTML = "";
-                    haiCham[this.x].style.width = "3px";
-                }
-                this.x = 0;
-                clearInterval(interval);
-                setInterval(()=>{
-                    switch(this.x){
-                        // Hiển thị chữ Happy
-                        case 0:
-                            this.elementTime = [17, 10, 25, 25, 34, 36, 36, 36];
-                            ++this.x;
-                        break;
-                        // Hiển thị chữ New
-                        case 1:
-                            this.elementTime = [23, 14, 32, 36, 36, 36, 36, 36];
-                            ++this.x;
-                        break;
-                        // Hiển thị chữ Year
-                        case 2:
-                            this.elementTime = [34, 14, 10, 27, 36, 36, 36, 36];
-                            ++this.x;
-                        break;
-                        // Hiển thị dãy số 2020
-                        case 3:
-                            this.elementTime = [2, 0, 2, 1 ,36 ,36, 36, 36];
-                            this.x = 0;
-                        break;
+                // Nếu chưa hiển thị "Happy New Year", thì hiển thị và đặt biến kiểm tra là true
+                if (!this.happyNewYearDisplayed) {
+                    document.querySelector(".clock .viewTime .time-remain:first-child").style.marginRight = "3px";
+                    var haiCham = document.querySelectorAll(".clock .viewTime .hai-cham > p");
+                    for(this.x =0; this.x <  haiCham.length; this.x++) {
+                        haiCham[this.x].innerHTML = "";
+                        haiCham[this.x].style.width = "3px";
                     }
-                    this.elementTime.forEach((value, index)=>{
-                        this.displayNumber(this.listNumberOfViewElementTime[index], value);
-                    })
-                }, 1500);
+                    this.x = 0;
+                    clearInterval(interval);
+                    setInterval(()=>{
+                        switch(this.x){
+                            // Hiển thị chữ Happy
+                            case 0:
+                                this.elementTime = [17, 10, 25, 25, 34, 36, 36, 36];
+                                ++this.x;
+                            break;
+                            // Hiển thị chữ New
+                            case 1:
+                                this.elementTime = [23, 14, 32, 36, 36, 36, 36, 36];
+                                ++this.x;
+                            break;
+                            // Hiển thị chữ Year
+                            case 2:
+                                this.elementTime = [34, 14, 10, 27, 36, 36, 36, 36];
+                                ++this.x;
+                            break;
+                            // Hiển thị dãy số 2024
+                            case 3:
+                                this.elementTime = [2, 0, 2, 4, 36 ,36, 36, 36];
+                                this.x = 0;
+                                this.happyNewYearDisplayed = true;
+                            break;
+                        }
+                        this.elementTime.forEach((value, index)=>{
+                            this.displayNumber(this.listNumberOfViewElementTime[index], value);
+                        })
+                    }, 1500);
+                }
             }
         }, 1000);
     };
