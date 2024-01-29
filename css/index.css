@@ -141,22 +141,22 @@ body {
 }
 
 .number:nth-child(7) {
-    left: 35%;
+    left: 13%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
 }
 .number:nth-child(8) {
-    left: 40%;
+    left: 18%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
 }
 .number:nth-child(9) {
-    left: 45%;
+    left: 23%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
 }
 .number:nth-child(10) {
-    left: 50%;
+    left: 28%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
 }
