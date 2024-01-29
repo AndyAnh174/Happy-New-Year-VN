@@ -1,4 +1,4 @@
-var fuT = new Date("February  9,2024 00:00:00").getTime()
+var fuT = new Date("February  10,2024 00:00:00").getTime()
         setInterval(function(){
             var noW = new Date().getTime()
             var D = fuT - noW
