@@ -130,12 +130,16 @@ body {
     -moz-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
     opacity: 0;
 }
-.number {
+
+.number  {
     position: fixed;
     top: -8%;
+    transform: translateY(10%);
     z-index: 11;
     opacity: 0;
+
 }
+
 .number:nth-child(7) {
     left: 35%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
