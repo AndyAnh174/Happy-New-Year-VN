@@ -132,9 +132,12 @@ body {
 }
 
 .number  {
-    position: fixed;
-    top: -8%;
-    transform: translateY(10%);
+   position: fixed;
+    top: 10%; /* Điều chỉnh giá trị top để đặt hình ảnh ở đầu trang */
+    left: 50%;
+    ransform: translateX(-2.5%);
+    transform: translateY(-30%); 
+
     z-index: 11;
     opacity: 0;
 
