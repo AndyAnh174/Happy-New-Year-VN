@@ -140,22 +140,22 @@ body {
     opacity: 0;
 }
 .number:nth-child(7) {
-    left: 18%;
+    left: 17%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
 }
 .number:nth-child(8) {
-    left: 23%;
+    left: 22%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
 }
 .number:nth-child(9) {
-    left: 28%;
+    left: 27%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
 }
 .number:nth-child(10) {
-    left: 33%;
+    left: 32%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
 }
@@ -164,7 +164,7 @@ body {
     top: -10%;
     width: 10%;
     height: 33%;
-    left: 60%;
+    left: 59%;
     z-index: 11;
     -webkit-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
     -moz-animation: animationTopDownSlogan 1.2s ease-in-out 3.9s infinite alternate;
