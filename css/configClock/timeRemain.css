@@ -23,7 +23,7 @@
     font-size: 25px;
     top: -100%;
     left: 32%;
-    color: #a93132;
+    color: #faca3c;
     opacity: 0;
 }
 .clock .viewTime .time-remain:first-child {
@@ -35,9 +35,9 @@
     position: relative;
     overflow: hidden;
     border-style: solid;
-    border-width: 1.5px;
-    border-color: rgba(212, 144, 61, 0.432);
-    background-color: rgba(255, 255, 255, 0.26);
+    border-width: 3px;
+    border-color: #f5dd96/*rgba(212, 144, 61, 0.432);*/
+    background-color: #f5dd96/*rgba(255, 255, 255, 0.26);*/
     border-radius: 10px;
     top: 200%;
     opacity: 0;
@@ -71,7 +71,7 @@
     text-align: center;
     line-height: 220%;
     font-size: 50px;
-    color: #a93132;
+    color: #faca3c;
 }
 
 @media only screen and (max-width: 414px) {
