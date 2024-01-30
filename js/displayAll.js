@@ -1,4 +1,4 @@
-    function displayAll(){
+function displayAll(){
     this.treeFlower = document.getElementsByClassName("contain-tree-flower"); // Cây hoa đào và hoa mai
     this.imgFamily = document.getElementsByClassName("family"); // Hình cảnh gia đình
     this.listLentern_1 = document.querySelectorAll(".contain-tree-flower:nth-child(1) > .lentern"); // Các lồng đèn trên cây đào

@@ -1,26 +1,40 @@
-var fuT = new Date("Feb 10, 2024 00:00:00").getTime();
+function displayClock(){
+    this.clock = document.getElementsByClassName("clock")[0]; // Khung của clock
+    this.elementTime = document.getElementsByClassName("element-time"); // Các đối tượng element-time dùng để hiển thị phần tử time
+    this.timeName = document.querySelectorAll(".clock .viewTime .time-remain > p"); // Tên của các thành phần thời gian
+    this.haiCham = document.querySelectorAll(".clock .viewTime .hai-cham > p"); // Dấu hai chấm
+    this.i = 0; // Biến trung gian
+    this.j = 0; // Biến trung gian
 
-setInterval(function() {
-    var noW = new Date().getTime();
-    var D = fuT - noW;
-    var days = Math.floor(D / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((D % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((D % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((D % (1000 * 60)) / 1000);
+    // Hiển thị khung clock
+    this.displayContainClock = function(){
+        setTimeout(()=>{
+            // this.clock.style.opacity = "1";
+            this.clock.style.width = "50%";
+            this.clock.style.transition = "1s";
+            setTimeout(()=>{
+                this.clock.style.height = "220px";
+            }, 300);
+        }, 500);
+    };
+    // Hiển thị các phần tử thời gian
+    this.displayElementTime = function(){
+        this.display(800, 100, 1, this.elementTime, "top", 0, "px");
+    };
+    // Hiển thị name time
+    this.displayTimeName = function(){
+        this.display(1000, 200, 1, this.timeName, "top", -30, "%");
+    };
+    // Hiển thị dấu hai chấm ":"
+    this.displayHaiCham = function(){
+        this.display(1000, 200, 1, this.haiCham, "top", 0, "%");
+    };
+}
 
-    // Kiểm tra nếu đếm ngược về 0
-    if (D <= 0) {
-            document.getElementById("days").innerText = "HAPPY";
-            document.getElementById("hours").innerText = "NEW";
-            document.getElementById("minutes").innerText = "YEAR";
-            document.getElementById("seconds").innerText = "2024"
-    } else {
-        // Hiển thị giá trị đếm ngược
-        document.getElementById("days").innerText = days;
-        document.getElementById("hours").innerText = hours;
-        document.getElementById("minutes").innerText = minutes;
-        document.getElementById("seconds").innerText = seconds;
-
-        // Nếu đếm ngược kết thúc, chuyển sang hiển thị các từ
-        }
-}, 1000);
+displayClock.prototype = new displayAll(); // Kế thừa hàm khởi tạo displayAll để sử dụng phương thức display
+// Khởi chạy các hàm
+var displayClock = new displayClock();
+displayClock.displayContainClock();
+displayClock.displayElementTime();
+displayClock.displayTimeName();
+displayClock.displayHaiCham();
