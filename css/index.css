@@ -130,19 +130,16 @@ body {
     -moz-animation: animationTopDownTextTet  1s linear 2.5s infinite alternate;
     opacity: 0;
 }
+.number {
 
-.number  {
    position: fixed;
     top: 10%; /* Điều chỉnh giá trị top để đặt hình ảnh ở đầu trang */
     left: 50%;
     ransform: translateX(-2.5%);
     transform: translateY(-30%); 
-
     z-index: 11;
     opacity: 0;
-
 }
-
 .number:nth-child(7) {
     left: 13%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
@@ -278,9 +275,4 @@ body {
         left: 2%;
         
     }
-}
-.setting {
-        position: absolute;
-        top: 0;
-        left: 0;
 }
