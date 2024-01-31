@@ -1,6 +1,8 @@
 body {
     background-image: url("../imgs/background.png");
     background-size: cover; 
+    position: fixed;
+    position: absolute;
 }
 
 .contain-tree-flower {
