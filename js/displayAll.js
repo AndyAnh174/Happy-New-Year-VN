@@ -6,8 +6,8 @@ function displayAll(){
     this.number2020 = document.getElementsByClassName("number"); // Các chữ số trong 2020
     this.textTet = document.getElementsByClassName("textTet")[0]; // Không biết gọi thế nào :)
     this.slogan = document.getElementsByClassName("slogan")[0]; // Câu nói hay ho năm canh tý
-    // this.iconSetting = document.getElementsByClassName("icon-setting")[0]; // icon setting
-    // this.setting = document.getElementsByClassName("setting")[0]; // Bảng setting
+    this.iconSetting = document.getElementsByClassName("icon-setting")[0]; // icon setting
+    this.setting = document.getElementsByClassName("setting")[0]; // Bảng setting
 
     // Hàm hiển thị các phần tử với giá trị Top, thời gian bắt đầu, thời gian lặp qua từng phần tử,
     // mảng phần tử, loại vị trí, giá trị, đơn vị đo của giá trị Top
@@ -53,6 +53,7 @@ function displayAll(){
             this.imgFamily[0].style.opacity = "1";
             this.imgFamily[1].style.opacity = "1";
         }, 1500);
+
     };
     // Hiển thị lồng đèn
     this.displayLentern = function(){
