@@ -2,7 +2,6 @@ body {
     background-image: url("../imgs/background.png");
     background-size: cover; 
     position: fixed;
-    position: absolute;
 }
 
 .contain-tree-flower {
@@ -155,24 +154,28 @@ body {
     opacity: 0;
 }
 .number:nth-child(7) {
-    left: 17%;
+    left: 3%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
+        position: fixed;
 }
 .number:nth-child(8) {
-    left: 22%;
+    left: 8%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
+        position: fixed;
 }
 .number:nth-child(9) {
-    left: 27%;
+    left: 13%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
+    position: fixed;
 }
 .number:nth-child(10) {
-    left: 32%;
+    left: 18%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
+        position: fixed;
 }
 .slogan {
     position: fixed;

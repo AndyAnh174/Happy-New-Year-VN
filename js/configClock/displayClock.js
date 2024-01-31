@@ -13,7 +13,7 @@ function displayClock(){
             this.clock.style.width = "50%";
             this.clock.style.transition = "1s";
             setTimeout(()=>{
-                this.clock.style.height = "220px";
+                this.clock.style.height = "150px";
             }, 300);
         }, 500);
     };
