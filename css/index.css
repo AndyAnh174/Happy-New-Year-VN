@@ -154,25 +154,25 @@ body {
     opacity: 0;
 }
 .number:nth-child(7) {
-    left: 3%;
+    left: 4%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 2.8s infinite alternate;
         position: fixed;
 }
 .number:nth-child(8) {
-    left: 8%;
+    left: 9%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.1s infinite alternate;
         position: fixed;
 }
 .number:nth-child(9) {
-    left: 13%;
+    left: 14%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.4s infinite alternate;
     position: fixed;
 }
 .number:nth-child(10) {
-    left: 18%;
+    left: 19%;
     -webkit-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
     -moz-animation: animationTopDownNumber2020 1.2s ease-in-out 3.7s infinite alternate;
         position: fixed;
